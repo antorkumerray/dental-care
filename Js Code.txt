@@ -1,0 +1,11 @@
+let menu = document.getElementById('menubtn');
+let navber = document.getElementById('navber');
+
+menu.onclick = () => {
+    menu.classList.toggle('btn');
+    navber.classList.toggle('active');
+}
+window.onscroll = () => {
+    menu.classList.remove('btn');
+    navber.classList.remove('active');
+}
